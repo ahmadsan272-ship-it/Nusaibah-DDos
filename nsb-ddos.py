@@ -9,6 +9,9 @@ import random
 import re
 import argparse
 
+# Clearing the SCREEN
+class colors:
+
 os.system( 'clear' )
 logo = """
 \033[0;30m═════════════════════════════════════════════════════════════════════\033[0;30m
