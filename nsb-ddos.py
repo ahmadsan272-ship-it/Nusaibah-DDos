@@ -65,7 +65,7 @@ def useragent_list():
 def randomString(size):
 	out_str = ''
 	for i in range(0, size):
-		a = random.randint(65, 90)
+		a = random.randint(65, 90) 
 		out_str += chr(a)
 	return(out_str)
 
@@ -90,7 +90,7 @@ def handleStatusCodes(status_code):
 	global request_counter
 	sys.stdout.write("\r%i requests" % request_counter)
 	sys.stdout.flush()
-	print("\033[100m \033[32mAttack \033[33mStarting \033[0m \033[7m" +(url)+ " \033[33m- \033[94mNusaibah\033[0m")
+	print("\033[100m \033[32mNSB \033[34mAttack \033[33mStarting\033[0m \033[7m" +(url)+ " \033[0m")
 	sys.stdout.flush()
 	if status_code == 429:
 			printMsg("You have been throttled")
