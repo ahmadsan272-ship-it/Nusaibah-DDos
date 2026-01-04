@@ -1,11 +1,13 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 import os
-import requests
 import sys
+import time
+import requests
 import threading
 import random
 import re
 import argparse
-import fade
 
 os.system( 'clear' )
 logo = """
@@ -20,8 +22,6 @@ logo = """
 
 \033[0;30m════════════════════════════════════════════════════════════════════\033[0;30m
 """
-faded_text = fade.fire(logo)
-print(faded_text)
 host=''
 headers_useragents=[]
 request_counter=0
